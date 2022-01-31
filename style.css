@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    background-image: linear-gradient(45deg, rgba(38, 29, 41, 0.589), rgba(33, 46, 54, 0.603)), url("./quiz.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.container {
+    position: absolute;
+    padding: 30px;
+    width: 50%;
+    background-color: white;
+    margin: auto;
+    height: auto;
+    top: 50%;
+    border-radius: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.instruction {
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.instruction span {
+    font-weight: bold;
+}
+.btn {
+    padding: 5px 30px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 20px;
+    background-color: teal;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.btn:hover {
+    background-color: rgb(3, 85, 85);
+}
+#quiz {
+    display: flex;
+    justify-content: space-between;
+    /* transition: all 0.1s ease-in; */
+}
+.quiz-container {
+    flex: 3;
+}
+.question {
+    margin-bottom: 20px;
+}
+label{
+    display: block;
+    margin: 10px 0px;
+}
+input {
+    margin-right: 10px;
+}
+#timeProgress {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.progressBtn {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid teal;
+    margin-right: 5px;
+}
+#progress {
+    display: flex;
+}
+#timer {
+    font-size: 40px;
+    font-weight: bold;
+}
+.btn-option{
+    width: 100%;
+    padding: 10px 0;
+    border: 1px solid teal;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: white;
+}
+.btn-option:hover{
+    background-color: teal;
+    color: white;
+}
+.selected {
+    background-color: teal;
+    color: white;
+}
+#retake {
+    color:red
+}
+#result {
+    text-align: center;
+    padding: 20px 0;
+}
+#result > p {
+    padding-bottom: 10px;
+}
+
+@media (max-width: 425px) {
+    #quiz{
+        flex-direction: column;
+    }
+    .container {
+    width: 80%;
+}
+}
+@media (max-width: 768px) {
+    .container {
+    width: 70%;
+}
+}

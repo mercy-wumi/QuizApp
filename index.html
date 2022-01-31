@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="quizStyle.css">
+    <title>Quiz</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="instruction">
+            <p>Read the following instructions before you begin your test.<span> Each question has 10s to answer it.
+                    Also, you can take the test as many times as possible.</span></p>
+            <button id="start-btn" class="btn">Start</button>
+        </div>
+        <div id="quiz" style="display: none;">
+            <div class="quiz-container">
+                <label class="question" id="question"></label>
+                <button id="optionOne" class="btn-option"></button>
+                <button id="optionTwo" class="btn-option"></button>
+                <button id="optionThree" class="btn-option"></button>
+                <button id="optionFour" class="btn-option"></button>
+                <button id="optionFive" class="btn-option"></button>
+            </div>
+            <div id="timeProgress">
+                <div id="timer"></div>
+                <div id="progress"></div>
+            </div>
+        </div>
+        <div id="result" style="display: none;">
+            <p>You scored <span id="my-results"></span></p>
+            <p>Refresh the browser to <span id="retake">retake</span> the Quiz</p>
+        </div>
+    </div>
+
+    <script src="quizScript.js"></script>
+</body>
+
+</html>
